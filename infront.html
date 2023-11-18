@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for loop</title>
+</head>
+<body>
+    <h1>For loop use here</h1>
+    <p id="test"></p>
+
+    <br><br>
+    <h2>number loops </h2>
+    <p id="test2"></p>
+
+
+    <script>
+
+        //
+        const cars = ["BMW", "MARUTI SUZUKI", "MAHINDRA", "TATA", "FORD", "RENAULT"];
+        let text = ""
+        for (i=0; i<cars.length; i++) {
+            text += "my car brand is " + cars[i] + "<br>"
+        }
+        document.getElementById("test").innerHTML = text
+
+        //number loops
+        let nums = "";
+        for (let i = 0; i<=10; i++){
+            nums += "the number is : " + i + "<br>"
+        }
+
+        document.getElementById("test2").innerHTML = nums
+    </script>
+    
+</body>
+</html>
